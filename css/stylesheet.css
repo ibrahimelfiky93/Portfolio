@@ -42,7 +42,7 @@
 /* ********** Elements ********** */
 body {
   color: var(--text-color);
-  padding: 0 10px !important;
+  padding: 0 15px !important;
   background: var(--bgColor);
   font-family: 'Montserrat', sans-serif;
 }
