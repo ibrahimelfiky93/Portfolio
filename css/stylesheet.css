@@ -61,6 +61,10 @@ p {
   line-height: 2;
 }
 
+p, li {
+  font-size: 14px !important;
+}
+
 a {
   font-weight: bold !important;
   text-decoration: none !important;
@@ -72,6 +76,11 @@ a {
 a:hover {
   color: var(--primary-color) !important;
   background: var(--secondary-color) !important;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 ul, ol {
@@ -134,5 +143,13 @@ article.skills section.part2 .progress-bar {
 article.contact section.part2 a {
   border: none !important;
   background: none !important;
+  text-decoration: underline !important;
+}
+
+/* ********** Footer ********** */
+footer a {
+  border: none !important;
+  background: none !important;
+  color: var(--text-color) !important;
   text-decoration: underline !important;
 }
