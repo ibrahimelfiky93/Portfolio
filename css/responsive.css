@@ -1,7 +1,11 @@
 /* ********** Colors ********** */
 
 /* Extra small devices (phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  p {
+    padding: 0 10px;
+  }
+}
 
 /* Small devices (tablets, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {}
