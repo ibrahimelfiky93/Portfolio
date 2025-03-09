@@ -1,0 +1,22 @@
+/* ********** Fonts ********** */
+body {
+  font-family: 'Tajawal', sans-serif;
+}
+
+h1 {
+  font-family: 'Cairo', sans-serif;
+}
+
+h2 {
+  font-family: 'Cairo', sans-serif;
+}
+
+h3 {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.bold-text {
+  font-weight: 500;
+}
+
+/* ********** Header ********** */
