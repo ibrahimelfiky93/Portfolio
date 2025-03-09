@@ -3,7 +3,7 @@
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
   p, li {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 
