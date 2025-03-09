@@ -1,17 +1,17 @@
 // Navbar Background
-document.addEventListener("DOMContentLoaded", function () {
-  const navbar = document.querySelector(".navbar");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const navbar = document.querySelector(".navbar");
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY >= 125) {
-      navbar.style.background = "rgba(22, 60, 144, 0.9)";
-      navbar.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.5)";
-    } else {
-      navbar.style.background = "transparent";
-      navbar.style.boxShadow = "none";
-    }
-  });
-});
+//   window.addEventListener("scroll", function () {
+//     if (window.scrollY >= 125) {
+//       navbar.style.background = "rgba(22, 60, 144, 0.9)";
+//       navbar.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.5)";
+//     } else {
+//       navbar.style.background = "transparent";
+//       navbar.style.boxShadow = "none";
+//     }
+//   });
+// });
 
 // Texts Of Slider
 document.addEventListener("DOMContentLoaded", function () {
@@ -247,3 +247,6 @@ document.addEventListener("DOMContentLoaded", function () {
   lightBtn.addEventListener("click", () => setTheme("light"));
   darkBtn.addEventListener("click", () => setTheme("dark"));
 });
+
+// Update Of The Year On Footer
+document.getElementById("year").textContent = new Date().getFullYear();

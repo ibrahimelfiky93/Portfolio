@@ -1,4 +1,12 @@
 /* ********** Colors ********** */
+:root {
+  --primary-color: #2A5ADA;
+  --secondary-color: #FFD700;
+  --accent-color: #28A745;
+  --text-color: #333;
+  --bgColor: #fff;
+  --story-img: #f5f5f5;
+}
 
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {

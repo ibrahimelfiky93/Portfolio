@@ -18,11 +18,11 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-  <!-- ********** CSS Links ********** -->
+  <!-- ********** CSS Fonts ********** -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Lemonada:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Lemonada:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
 
@@ -32,8 +32,49 @@
 
 <body>
   <!-- ********** Header ********** -->
-  <header>
-    <nav></nav>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg px-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ibrahim El-Fiky</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-2">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <section class="intro"></section>
   </header>
 
@@ -592,7 +633,7 @@
         </div>
         <div class="col-11 col-lg-7 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
           <h4>
-            <i class="fa-duotone fa-solid fa-lightbulb me-2"
+            <i class="fa-duotone fa-solid fa-screwdriver-wrench me-2"
               style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
             Skills: The Gateway to Growth and Excellence
           </h4>
@@ -1165,18 +1206,28 @@
           </h4>
           <ul class="list-unstyled mt-3">
             <li class="mt-2 ms-2">
+              <i class="fa-duotone fa-solid fa-display-code fa-lg me-2"
+                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
               <a href="#">Web Design</a>
             </li>
             <li class="mt-2 ms-2">
+              <i class="fa-duotone fa-solid fa-chart-mixed-up-circle-dollar fa-lg me-2"
+                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
               <a href="#">Data Analysis</a>
             </li>
             <li class="mt-2 ms-2">
+              <i class="fa-duotone fa-solid fa-bullhorn fa-lg me-2"
+                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
               <a href="#">Digital Marketing</a>
             </li>
             <li class="mt-2 ms-2">
+              <i class="fa-duotone fa-solid fa-files fa-lg me-2"
+                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
               <a href="#">MS Office Service</a>
             </li>
             <li class="mt-2 ms-2">
+              <i class="fa-duotone fa-solid fa-graduation-cap fa-lg me-2"
+                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
               <a href="#">iTQAN Academy</a>
             </li>
           </ul>
@@ -1189,18 +1240,28 @@
           </h4>
           <ul class="list-unstyled mt-3">
             <li class="mt-2 ms-2">
+              <i class="fa-duotone fa-solid fa-address-card fa-lg me-2"
+                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
               <a href="#about">About Me</a>
             </li>
             <li class="mt-2 ms-2">
+              <i class="fa-duotone fa-solid fa-graduation-cap fa-lg me-2"
+                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
               <a href="#education">Education</a>
             </li>
             <li class="mt-2 ms-2">
+              <i class="fa-duotone fa-solid fa-briefcase fa-lg me-2"
+                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
               <a href="#workExp">Experience</a>
             </li>
             <li class="mt-2 ms-2">
+              <i class="fa-duotone fa-solid fa-file-certificate fa-lg me-2"
+                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
               <a href="#certificate">Certificate</a>
             </li>
             <li class="mt-2 ms-2">
+              <i class="fa-duotone fa-solid fa-screwdriver-wrench fa-lg me-2"
+                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
               <a href="#skills">Skills</a>
             </li>
           </ul>
@@ -1213,31 +1274,31 @@
           </h4>
           <ul class="list-unstyled mt-3">
             <li class="mt-2 ms-2">
-              <i class="fa-brands fa-linkedin fa-xl me-2" style="color: #0072b1;"></i>
+              <i class="fa-brands fa-linkedin fa-lg me-2" style="color: #0072b1;"></i>
               <a href="https://www.linkedin.com/in/ibrahimelfiky93" target="_blank" rel="noopener noreferrer">
                 LinkedIn <span style="opacity: 0.6;">(@ibrahimelfiky93)</span>
               </a>
             </li>
             <li class="mt-2 ms-2">
-              <i class="fa-brands fa-square-instagram fa-xl me-2" style="color: #E1306C;"></i>
+              <i class="fa-brands fa-square-instagram fa-lg me-2" style="color: #E1306C;"></i>
               <a href="https://www.instagram.com/ibrahimelfiky93/" target="_blank" rel="noopener noreferrer">
                 Instagram <span style="opacity: 0.6;">(@ibrahimelfiky93)</span>
               </a>
             </li>
             <li class="mt-2 ms-2">
-              <i class="fa-brands fa-square-facebook fa-xl me-2" style="color: #0165e1;"></i>
+              <i class="fa-brands fa-square-facebook fa-lg me-2" style="color: #0165e1;"></i>
               <a href="https://www.facebook.com/ibrahimelfiky93" target="_blank" rel="noopener noreferrer">
                 Facebook <span style="opacity: 0.6;">(@ibrahimelfiky93)</span>
               </a>
             </li>
             <li class="mt-2 ms-2">
-              <i class="fa-brands fa-pinterest fa-xl me-2" style="color: #BD081C;"></i>
+              <i class="fa-brands fa-pinterest fa-lg me-2" style="color: #BD081C;"></i>
               <a href="https://www.pinterest.com/ibrahimelfiky93/" target="_blank" rel="noopener noreferrer">
                 Pinterest <span style="opacity: 0.6;">(@ibrahimelfiky93)</span>
               </a>
             </li>
             <li class="mt-2 ms-2">
-              <i class="fa-duotone fa-solid fa-circle-plus fa-xl me-2"
+              <i class="fa-duotone fa-solid fa-circle-plus fa-lg me-2"
                 style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
               <a href="https://linktr.ee/ibrahimelfiky93" target="_blank" rel="noopener noreferrer">
                 linktree <span style="opacity: 0.6;">(@ibrahimelfiky93)</span>
@@ -1247,8 +1308,19 @@
         </div>
       </div>
     </section>
-    <section class="container copyright"></section>
+    <section class="copyright px-3 py-3 text-center">
+      <p class="fw-bold">
+        &copy; <span id="year"></span> <a href="#header">Ibrahim El-Fiky</a> All Rights Reserved.
+      </p>
+    </section>
   </footer>
+
+  <!-- ********** jS File ********** -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
