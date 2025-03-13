@@ -32,50 +32,85 @@
 
 <body>
   <!-- ********** Header ********** -->
-  <header id="header">
-    <nav class="navbar navbar-expand-lg px-3">
+  <header class="shadow" id="header">
+    <nav class="navbar navbar-expand-lg py-2 px-lg-3 shadow-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Ibrahim El-Fiky</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand ms-3 ms-lg-0" href="#">Ibrahim El-Fiky</a>
+        <button class="navbar-toggler me-3 me-lg-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-duotone fa-solid fa-bars fa-xl"
+            style="--fa-primary-color: #ffd700; --fa-secondary-color: #ffd700; --fa-secondary-opacity: 1;"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item me-2">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item px-2 py-2 py-lg-0">
+              <a class="nav-link px-2 active" aria-current="page" href="#header">Home</a>
             </li>
-            <li class="nav-item me-2">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item px-2 py-2 py-lg-0">
+              <a class="nav-link px-2" href="#about">About</a>
             </li>
-            <li class="nav-item me-2">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item px-2 py-2 py-lg-0">
+              <a class="nav-link px-2" href="#education">Education</a>
             </li>
-            <li class="nav-item me-2">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item px-2 py-2 py-lg-0">
+              <a class="nav-link px-2" href="#workExp">Work-Exp</a>
             </li>
-            <li class="nav-item me-2">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item px-2 py-2 py-lg-0">
+              <a class="nav-link px-2" href="#skills">Skills</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <li class="nav-item px-2 py-2 py-lg-0">
+              <a class="nav-link px-2" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item px-2 py-2 py-lg-0">
+              <a class="nav-link px-2" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown px-2 py-2 py-lg-0">
+              <a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Dropdown
+                <i class="fa-duotone fa-solid fa-gear-complex fa-spin fa-xl"></i>
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <ul class="dropdown-menu px-3 py-2">
+                <h6 class="color2 fw-bold">
+                  <i class="fa-solid fa-palette me-1"></i>Themes
+                </h6>
                 <li>
-                  <hr class="dropdown-divider">
+                  <button class="color2 ms-3 my-1" id="lightTheme">
+                    <i class="fa-solid fa-sun-bright fa-spin me-2"></i>Light Mode
+                  </button>
                 </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <button class="color2 ms-3 my-1" id="darkTheme">
+                    <i class="fa-solid fa-moon fa-spin me-2"></i>Dark Mode
+                  </button>
+                </li>
+                <li>
+                  <hr class="dropdown-divider my-2">
+                </li>
+                <h6 class="color2 fw-bold">
+                  <i class="fa-solid fa-earth-americas me-1"></i>Languages
+                </h6>
+                <li>
+                  <button class="color2 ms-3 my-1" id="lightTheme">
+                    <i class="fa-solid fa-sun-bright fa-spin me-2"></i>العربية
+                  </button>
+                </li>
+                <li>
+                  <button class="color2 ms-3 my-1" id="darkTheme">
+                    <i class="fa-solid fa-moon fa-spin me-2"></i>English
+                  </button>
+                </li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="intro"></section>
+    <div class="overlay"></div>
+    <div class="text-center overlay-text">
+      <h1 class="mb-4 color2">Ibrahim El-Fiky</h1>
+      <p class="slider-text color2"></p>
+    </div>
   </header>
 
   <!-- ********** About-Me ********** -->
@@ -399,6 +434,88 @@
         </div>
       </div>
     </section>
+    <section class="container certificates part1 mt-5">
+      <div class="row align-items-center justify-content-evenly">
+        <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
+          <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">
+            Certificates
+            </h4>
+            <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
+              <img src="images/certificate.jpg" alt="Certificate" title="Certificate"
+                class="rounded-circle w-100 img-fluid">
+            </div>
+        </div>
+        <div class="col-11 col-lg-7 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
+          <h4>
+            <i class="fa-duotone fa-solid fa-file-certificate me-2"
+              style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
+            A Journey of Continuous Learning & Growth
+          </h4>
+          <hr class="my-2">
+          <p class="text-justify">
+            Throughout my professional journey, I have always been committed to enhancing my skills and expanding my
+            knowledge by
+            obtaining certified qualifications in various fields. These certifications reflect my continuous dedication
+            to learning
+            and professional growth, enabling me to deliver the highest level of performance in different areas of
+            expertise. Here,
+            you can view my CV and download the certifications I have earned throughout my career.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container certificates part2 mt-5">
+      <div class="row align-items-center justify-content-evenly mt-4">
+        <div
+          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
+          <h6 class="mb-3">University Qualification</h6>
+          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
+        </div>
+        <div
+          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
+          <h6 class="mb-3">Management Skills</h6>
+          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
+        </div>
+        <div
+          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
+          <h6 class="mb-3">Accountant Certification</h6>
+          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
+        </div>
+        <div
+          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
+          <h6 class="mb-3">Google Digital Marketing</h6>
+          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
+        </div>
+        <div
+          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
+          <h6 class="mb-3">V&L Digital Marketing</h6>
+          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
+        </div>
+        <div
+          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
+          <h6 class="mb-3">Networking Certification</h6>
+          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
+        </div>
+        <div
+          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
+          <h6 class="mb-3">Sololearn Front-End Development</h6>
+          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
+        </div>
+        <div
+          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
+          <h6 class="mb-3">Udacity Front-End Development</h6>
+          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
+        </div>
+      </div>
+    </section>
+    <section class="part3 resume mt-5 py-4">
+      <div class="text-center py-5 px-3">
+        <p class="mb-4 fw-bold">
+          Discover my skills and experience at a glance – download my CV now and let's embark on a journey to success!
+        </p>
+        <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Get My CV</a>
+      </div>
+    </section>
   </article>
 
   <!-- ********** Work Experience ********** -->
@@ -531,92 +648,6 @@
             <li>Preparing financial, attendance, and payroll reports.</li>
           </ol>
         </div>
-      </div>
-    </section>
-  </article>
-
-  <!-- ********** Certificates ********** -->
-  <article class="mt-5 certificates" id="certificate">
-    <section class="container part1">
-      <div class="row align-items-center justify-content-evenly">
-        <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
-          <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">
-            Certificates
-            </h4>
-            <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
-              <img src="images/certificate.jpg" alt="Certificate" title="Certificate"
-                class="rounded-circle w-100 img-fluid">
-            </div>
-        </div>
-        <div class="col-11 col-lg-7 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
-          <h4>
-            <i class="fa-duotone fa-solid fa-file-certificate me-2"
-              style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-            A Journey of Continuous Learning & Growth
-          </h4>
-          <hr class="my-2">
-          <p class="text-justify">
-            Throughout my professional journey, I have always been committed to enhancing my skills and expanding my
-            knowledge by
-            obtaining certified qualifications in various fields. These certifications reflect my continuous dedication
-            to learning
-            and professional growth, enabling me to deliver the highest level of performance in different areas of
-            expertise. Here,
-            you can view my CV and download the certifications I have earned throughout my career.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="container part2">
-      <div class="row align-items-center justify-content-evenly mt-4">
-        <div
-          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
-          <h6 class="mb-3">University Qualification</h6>
-          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
-        </div>
-        <div
-          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
-          <h6 class="mb-3">Management Skills</h6>
-          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
-        </div>
-        <div
-          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
-          <h6 class="mb-3">Accountant Certification</h6>
-          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
-        </div>
-        <div
-          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
-          <h6 class="mb-3">Google Digital Marketing</h6>
-          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
-        </div>
-        <div
-          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
-          <h6 class="mb-3">V&L Digital Marketing</h6>
-          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
-        </div>
-        <div
-          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
-          <h6 class="mb-3">Networking Certification</h6>
-          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
-        </div>
-        <div
-          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
-          <h6 class="mb-3">Sololearn Front-End Development</h6>
-          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
-        </div>
-        <div
-          class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
-          <h6 class="mb-3">Udacity Front-End Development</h6>
-          <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Download</a>
-        </div>
-      </div>
-    </section>
-    <section class="part3 mt-5 py-4">
-      <div class="container text-center py-5 px-3">
-        <p class="mb-4 fw-bold">
-          Discover my skills and experience at a glance – download my CV now and let's embark on a journey to success!
-        </p>
-        <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2 rounded-3">Get My CV</a>
       </div>
     </section>
   </article>
@@ -958,8 +989,8 @@
     </section>
   </article>
 
-  <!-- ********** iTQAN ********** -->
-  <article class="mt-5 itqan">
+  <!-- ********** Projects ********** -->
+  <article class="mt-5 projects" id="projects">
     <section class="container part1">
       <div class="row align-items-center justify-content-evenly">
         <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
@@ -1033,7 +1064,7 @@
   </article>
 
   <!-- ********** Hobbies ********** -->
-  <article class="mt-5 hobbies">
+  <article class="mt-5 hobbies" id="hobbies">
     <section class="container part1">
       <div class="row align-items-center justify-content-evenly">
         <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
@@ -1119,7 +1150,7 @@
   </article>
 
   <!-- ********** Contact ********** -->
-  <article class="mt-5 contact">
+  <article class="mt-5 contact" id="contact">
     <section class="container part1">
       <div class="row align-items-center justify-content-evenly">
         <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
