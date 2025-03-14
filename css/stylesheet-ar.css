@@ -1,22 +1,30 @@
-/* ********** Fonts ********** */
+/* ********** Elements ********** */
 body {
   font-family: 'Tajawal', sans-serif;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Cairo', sans-serif;
 }
 
-h2 {
-  font-family: 'Cairo', sans-serif;
-}
-
-h3 {
-  font-family: 'Tajawal', sans-serif;
-}
-
-.bold-text {
-  font-weight: 500;
+ol {
+  list-style: arabic-indic !important;
 }
 
 /* ********** Header ********** */
+header nav a.navbar-brand {
+  font-family: 'Lemonada', sans-serif;
+}
+
+header nav li.nav-item:not(:last-child)::after {
+  top: 0;
+  left: 0;
+  right: auto;
+}
+
+header nav li.nav-item.dropdown ul.dropdown-menu {
+  left: 0;
+  top: 165%;
+  right: auto;
+  background: rgb(42 90 218 / 95%);
+}

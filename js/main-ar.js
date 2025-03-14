@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
 // Texts Of Slider
 document.addEventListener("DOMContentLoaded", function () {
   const texts = [
-    "Professional Website Designer",
-    "Certified Digital Marketer with Practical Experience",
-    "Expert in Office Services and Data Analysis",
-    "Certified Trainer Offering Professional Courses",
+    "مصمم مواقع ويب محترف",
+    "مسوّق رقمي معتمد بخبرة عملية",
+    "خبير في خدمات الأوفيس وتحليل البيانات",
+    "مدرب معتمد يقدم دورات احترافية",
   ];
 
   let index = 0;
