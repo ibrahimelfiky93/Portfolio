@@ -134,6 +134,24 @@ hr {
   color: var(--accent-color) !important;
 }
 
+.theme-active,
+.lang-active {
+  color: var(--primary-color) !important;
+  background: var(--secondary-color) !important;
+}
+
+.theme-disable,
+.lang-disable {
+  background: none !important;
+  color: var(--secondary-color) !important;
+}
+
+.theme-disable:hover,
+.lang-disable:hover {
+  color: var(--primary-color) !important;
+  background: var(--secondary-color) !important;
+}
+
 /* ********** Header ********** */
 header {
   min-height: 100vh;
@@ -190,13 +208,13 @@ header nav a.nav-link:focus-visible {
   box-shadow: none;
 }
 
-header nav li.nav-item.dropdown a:hover {
-  background: none !important;
-  color: var(--secondary-color) !important;
-}
-
 header nav li.nav-item.dropdown a::after {
   display: none;
+}
+
+header nav li.nav-item.dropdown a.nav-link {
+  background: none !important;
+  color: var(--secondary-color) !important;
 }
 
 header nav li.nav-item.dropdown ul.dropdown-menu {
@@ -210,10 +228,6 @@ header nav li.nav-item.dropdown ul.dropdown-menu button {
   border: none;
   outline: none;
   background: none;
-  /* font-weight: bold; */
-  /* margin-top: 3px !important;
-  margin-bottom: 3px !important;
-  margin-left: 20px !important; */
 }
 
 header nav li.nav-item.dropdown ul.dropdown-menu .dropdown-divider {
@@ -263,10 +277,6 @@ header .overlay-text p {
 /* ********** Certificates ********** */
 article.education section.resume {
   background: var(--gradient)
-}
-
-article.education section.certificates.part1 div {
-  margin: 0 auto !important;
 }
 
 /* ********** Skills ********** */

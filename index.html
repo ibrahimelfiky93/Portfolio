@@ -45,60 +45,68 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item px-2 py-2 py-lg-0">
-              <a class="nav-link px-2 active" aria-current="page" href="#header">Home</a>
+              <a class="nav-link nav-coll px-2 active" aria-current="page" href="#header">Home</a>
             </li>
             <li class="nav-item px-2 py-2 py-lg-0">
-              <a class="nav-link px-2" href="#about">About</a>
+              <a class="nav-link nav-coll px-2" href="#about">About</a>
             </li>
             <li class="nav-item px-2 py-2 py-lg-0">
-              <a class="nav-link px-2" href="#education">Education</a>
+              <a class="nav-link nav-coll px-2" href="#education">Education</a>
             </li>
             <li class="nav-item px-2 py-2 py-lg-0">
-              <a class="nav-link px-2" href="#workExp">Work-Exp</a>
+              <a class="nav-link nav-coll px-2" href="#workExp">Experience</a>
             </li>
             <li class="nav-item px-2 py-2 py-lg-0">
-              <a class="nav-link px-2" href="#skills">Skills</a>
+              <a class="nav-link nav-coll px-2" href="#skills">Skills</a>
             </li>
             <li class="nav-item px-2 py-2 py-lg-0">
-              <a class="nav-link px-2" href="#projects">Projects</a>
+              <a class="nav-link nav-coll px-2" href="#projects">Projects</a>
             </li>
             <li class="nav-item px-2 py-2 py-lg-0">
-              <a class="nav-link px-2" href="#contact">Contact</a>
+              <a class="nav-link nav-coll px-2" href="#contact">Contact</a>
             </li>
-            <li class="nav-item dropdown px-2 py-2 py-lg-0">
+            <li class="nav-item dropdown p-2 py-lg-0">
               <a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 <i class="fa-duotone fa-solid fa-gear-complex fa-spin fa-xl"></i>
               </a>
               <ul class="dropdown-menu px-3 py-2">
-                <h6 class="color2 fw-bold">
-                  <i class="fa-solid fa-palette me-1"></i>Themes
-                </h6>
                 <li>
-                  <button class="color2 ms-3 my-1" id="lightTheme">
-                    <i class="fa-solid fa-sun-bright fa-spin me-2"></i>Light Mode
-                  </button>
+                  <h6 class="color2 fw-bold">
+                    <i class="fa-solid fa-palette me-1"></i>Themes
+                  </h6>
                 </li>
                 <li>
-                  <button class="color2 ms-3 my-1" id="darkTheme">
-                    <i class="fa-solid fa-moon fa-spin me-2"></i>Dark Mode
-                  </button>
+                  <ul class="row align-items-center justify-content-evenly list-unstyled theme">
+                    <li class="col-12 mt-2">
+                      <button class="fw-bold px-2 py-1 theme-active" id="lightTheme">
+                        <i class="fa-solid fa-sun fa-lg me-1"></i>Light Mode
+                      </button>
+                    </li>
+                    <li class="col-12 mt-2">
+                      <button class="fw-bold px-2 py-1 theme-disable" id="darkTheme">
+                        <i class="fa-solid fa-moon fa-lg me-2"></i>Dark Mode
+                      </button>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <hr class="dropdown-divider my-2">
-                </li>
-                <h6 class="color2 fw-bold">
-                  <i class="fa-solid fa-earth-americas me-1"></i>Languages
-                </h6>
-                <li>
-                  <button class="color2 ms-3 my-1" id="lightTheme">
-                    <i class="fa-solid fa-sun-bright fa-spin me-2"></i>العربية
-                  </button>
+                  <hr class="dropdown-divider my-3">
                 </li>
                 <li>
-                  <button class="color2 ms-3 my-1" id="darkTheme">
-                    <i class="fa-solid fa-moon fa-spin me-2"></i>English
-                  </button>
+                  <h6 class="color2 fw-bold">
+                    <i class="fa-solid fa-earth-americas me-1"></i>Languages
+                  </h6>
+                </li>
+                <li>
+                  <ul class="row align-items-center justify-content-evenly list-unstyled lang">
+                    <li class="col-12 mt-2">
+                      <a href="#" class="color2 px-2 py-1 lang-disable">Arabic</a>
+                    </li>
+                    <li class="col-12 mt-2">
+                      <a href="index.html" class="color1 px-2 py-1 lang-active">English</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
@@ -115,15 +123,17 @@
 
   <!-- ********** About-Me ********** -->
   <article class="mt-5 about-me" id="about">
+    <h2 class="visually-hidden">About</h2>
     <section class="container part1">
+      <h2 class="visually-hidden">About</h2>
       <div class="row align-items-center justify-content-evenly">
         <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
           <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">
             My Story
-            </h4>
-            <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
-              <img src="images/my-story.png" alt="My Story" title="My Story" class="rounded-circle w-100 img-fluid">
-            </div>
+          </h3>
+          <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
+            <img src="images/my-story.png" alt="My Story" title="My Story" class="rounded-circle w-100 img-fluid">
+          </div>
         </div>
         <div class="col-11 col-lg-7 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
           <h4>
@@ -153,6 +163,7 @@
       </div>
     </section>
     <section class="container part2">
+      <h2 class="visually-hidden">About</h2>
       <div class="row align-items-center justify-content-evenly mt-4">
         <div class="col-11 col-lg-5 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
           <h4>
@@ -190,16 +201,18 @@
 
   <!-- ********** Educational Background ********** -->
   <article class="mt-5 education" id="education">
+    <h2 class="visually-hidden">Education</h2>
     <section class="container part1">
+      <h2 class="visually-hidden">Education</h2>
       <div class="row align-items-center justify-content-evenly">
         <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
           <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">
             Educational Background
-            </h4>
-            <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
-              <img src="images/education.jpg" alt="Educational Background" title="Educational Background"
-                class="rounded-circle w-100 img-fluid">
-            </div>
+          </h3>
+          <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
+            <img src="images/education.jpg" alt="Educational Background" title="Educational Background"
+              class="rounded-circle w-100 img-fluid">
+          </div>
         </div>
         <div class="col-11 col-lg-7 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
           <h4>
@@ -221,6 +234,7 @@
       </div>
     </section>
     <section class="container part2">
+      <h2 class="visually-hidden">Education</h2>
       <div class="row align-items-center justify-content-evenly mt-4">
         <div class="col-11 col-lg-10 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
           <h4>
@@ -435,15 +449,16 @@
       </div>
     </section>
     <section class="container certificates part1 mt-5">
+      <h2 class="visually-hidden">Education</h2>
       <div class="row align-items-center justify-content-evenly">
         <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
           <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">
             Certificates
-            </h4>
-            <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
-              <img src="images/certificate.jpg" alt="Certificate" title="Certificate"
-                class="rounded-circle w-100 img-fluid">
-            </div>
+          </h3>
+          <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
+            <img src="images/certificate.jpg" alt="Certificate" title="Certificate"
+              class="rounded-circle w-100 img-fluid">
+          </div>
         </div>
         <div class="col-11 col-lg-7 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
           <h4>
@@ -465,6 +480,7 @@
       </div>
     </section>
     <section class="container certificates part2 mt-5">
+      <h2 class="visually-hidden">Education</h2>
       <div class="row align-items-center justify-content-evenly mt-4">
         <div
           class="col-5 col-lg-3 mx-2 my-4 px-3 py-4 rounded-4 shadow text-start custome-border row align-items-center justify-content-center text-center">
@@ -509,6 +525,7 @@
       </div>
     </section>
     <section class="part3 resume mt-5 py-4">
+      <h2 class="visually-hidden">Education</h2>
       <div class="text-center py-5 px-3">
         <p class="mb-4 fw-bold">
           Discover my skills and experience at a glance – download my CV now and let's embark on a journey to success!
@@ -520,16 +537,18 @@
 
   <!-- ********** Work Experience ********** -->
   <article class="mt-5 work-exp" id="workExp">
+    <h2 class="visually-hidden">Work-Exp</h2>
     <section class="container part1">
+      <h2 class="visually-hidden">Work-Exp</h2>
       <div class="row align-items-center justify-content-evenly">
         <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
           <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">
             Work Experience
-            </h4>
-            <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
-              <img src="images/work-exp.jpg" alt="Work Experience" title="Work Experience"
-                class="rounded-circle w-100 img-fluid">
-            </div>
+          </h3>
+          <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
+            <img src="images/work-exp.jpg" alt="Work Experience" title="Work Experience"
+              class="rounded-circle w-100 img-fluid">
+          </div>
         </div>
         <div class="col-11 col-lg-7 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
           <h4>
@@ -549,6 +568,7 @@
       </div>
     </section>
     <section class="container part2">
+      <h2 class="visually-hidden">Work-Exp</h2>
       <div class="row align-items-center justify-content-evenly mt-4">
         <div class="col-11 col-lg-5 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
           <h4>
@@ -654,13 +674,17 @@
 
   <!-- ********** Skills ********** -->
   <article class="mt-5 skills" id="skills">
+    <h2 class="visually-hidden">Skills</h2>
     <section class="container part1">
+      <h2 class="visually-hidden">Skills</h2>
       <div class="row align-items-center justify-content-evenly">
         <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
-          <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">My Skills</h4>
-            <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
-              <img src="images/skills.jpg" alt="Skills" title="Skills" class="rounded-circle w-100 img-fluid">
-            </div>
+          <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">
+            My Skills
+          </h3>
+          <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
+            <img src="images/skills.jpg" alt="Skills" title="Skills" class="rounded-circle w-100 img-fluid">
+          </div>
         </div>
         <div class="col-11 col-lg-7 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
           <h4>
@@ -684,8 +708,9 @@
       </div>
     </section>
     <section class="container part2">
-      <div class="row align-items-center justify-content-evenly mt-4">
-        <div class="col-11 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
+      <h2 class="visually-hidden">Skills</h2>
+      <div class="row align-items-start justify-content-evenly mt-4">
+        <div class="col-11 col-lg-5 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
           <h4 class="m-0 fw-bold color1">
             <i class="fa-duotone fa-solid fa-user-group me-2"
               style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
@@ -773,107 +798,11 @@
             </div>
           </div>
         </div>
-        <div class="col-11 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
-          <h4 class="m-0 fw-bold color1">
-            <i class="fa-duotone fa-solid fa-laptop me-2"
-              style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-            Computer Skills
-          </h4>
-          <hr class="my-2">
-          <div class="progress-box mt-4">
-            <h6 class="fw-bold color3">
-              <i class="fa-duotone fa-solid fa-laptop-file me-2"></i>
-              Microsoft Office 365
-            </h6>
-            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-            </div>
-          </div>
-          <div class="progress-box mt-4">
-            <h6 class="fw-bold color3">
-              <i class="fa-brands fa-google-drive me-2"></i>
-              Google Workspace
-            </h6>
-            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="85"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
-            </div>
-          </div>
-          <div class="progress-box mt-4">
-            <h6 class="fw-bold color3">
-              <i class="fa-duotone fa-solid fa-desktop me-2"></i>
-              Computer Software
-            </h6>
-            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
-            </div>
-          </div>
-          <div class="progress-box mt-4">
-            <h6 class="fw-bold color3">
-              <i class="fa-duotone fa-solid fa-bullhorn me-2"></i>
-              Digital Marketing
-            </h6>
-            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="85"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-11 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
-          <h4 class="m-0 fw-bold color1">
-            <i class="fa-duotone fa-solid fa-chart-mixed-up-circle-dollar me-2"
-              style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-            Data Analysis
-          </h4>
-          <hr class="my-2">
-          <div class="progress-box mt-4">
-            <h6 class="fw-bold color3">
-              <i class="fa-duotone fa-solid fa-file-xls me-2"></i>
-              Microsoft Excel
-            </h6>
-            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-            </div>
-          </div>
-          <div class="progress-box mt-4">
-            <h6 class="fw-bold color3">
-              <i class="fa-duotone fa-solid fa-database me-2"></i>
-              SQL
-            </h6>
-            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="65"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%">65%</div>
-            </div>
-          </div>
-          <div class="progress-box mt-4">
-            <h6 class="fw-bold color3">
-              <i class="fa-duotone fa-solid fa-table-columns me-2"></i>
-              Power BI
-            </h6>
-            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
-            </div>
-          </div>
-          <div class="progress-box mt-4">
-            <h6 class="fw-bold color3">
-              <i class="fa-brands fa-python me-2"></i>
-              Python
-            </h6>
-            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-11 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
+        <div class="col-11 col-lg-5 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
           <h4 class="m-0 fw-bold color1">
             <i class="fa-duotone fa-solid fa-display-code me-2"
               style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-            Web Development
+            Programming
           </h4>
           <hr class="my-2">
           <div class="progress-box mt-4">
@@ -946,8 +875,94 @@
               <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
             </div>
           </div>
+          <div class="progress-box mt-4">
+            <h6 class="fw-bold color3">
+              <i class="fa-brands fa-wordpress me-2"></i>
+              Wordpress
+            </h6>
+            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%">50%</div>
+            </div>
+          </div>
         </div>
-        <div class="col-11 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
+        <div class="col-11 col-lg-5 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
+          <h4 class="m-0 fw-bold color1">
+            <i class="fa-duotone fa-solid fa-laptop me-2"
+              style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
+            Computer Skills
+          </h4>
+          <hr class="my-2">
+          <div class="progress-box mt-4">
+            <h6 class="fw-bold color3">
+              <i class="fa-duotone fa-solid fa-laptop-file me-2"></i>
+              Microsoft Office 365
+            </h6>
+            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+            </div>
+          </div>
+          <div class="progress-box mt-4">
+            <h6 class="fw-bold color3">
+              <i class="fa-brands fa-google-drive me-2"></i>
+              Google Workspace
+            </h6>
+            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="85"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+            </div>
+          </div>
+          <div class="progress-box mt-4">
+            <h6 class="fw-bold color3">
+              <i class="fa-duotone fa-solid fa-desktop me-2"></i>
+              Computer Software
+            </h6>
+            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-lg-5 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
+          <h4 class="m-0 fw-bold color1">
+            <i class="fa-duotone fa-solid fa-chart-mixed-up-circle-dollar me-2"
+              style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
+            Data Analysis
+          </h4>
+          <hr class="my-2">
+          <div class="progress-box mt-4">
+            <h6 class="fw-bold color3">
+              <i class="fa-duotone fa-solid fa-file-xls me-2"></i>
+              Microsoft Excel
+            </h6>
+            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+            </div>
+          </div>
+          <div class="progress-box mt-4">
+            <h6 class="fw-bold color3">
+              <i class="fa-duotone fa-solid fa-database me-2"></i>
+              SQL
+            </h6>
+            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="65"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%">65%</div>
+            </div>
+          </div>
+          <div class="progress-box mt-4">
+            <h6 class="fw-bold color3">
+              <i class="fa-duotone fa-solid fa-table-columns me-2"></i>
+              Power BI
+            </h6>
+            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="70"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-lg-5 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
           <h4 class="m-0 fw-bold color1">
             <i class="fa-duotone fa-solid fa-diagram-project me-2"
               style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
@@ -985,79 +1000,127 @@
             </div>
           </div>
         </div>
+        <div class="col-11 col-lg-5 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
+          <h4 class="m-0 fw-bold color1">
+            <i class="fa-duotone fa-solid fa-bullhorn me-2"
+              style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
+            Digital Marketing
+          </h4>
+          <hr class="my-2">
+          <div class="progress-box mt-4">
+            <h6 class="fw-bold color3">
+              <i class="fa-duotone fa-solid fa-magnifying-glass-chart me-2"></i>
+              SEO
+            </h6>
+            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="85"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">65%</div>
+            </div>
+          </div>
+          <div class="progress-box mt-4">
+            <h6 class="fw-bold color3">
+              <i class="fa-duotone fa-solid fa-thumbs-up me-2"></i>
+              Social Media Ads
+            </h6>
+            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="80"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+            </div>
+          </div>
+          <div class="progress-box mt-4">
+            <h6 class="fw-bold color3">
+              <i class="fa-duotone fa-solid fa-envelope me-2"></i>
+              Email Marketing
+            </h6>
+            <div class="mt-2 progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">70%</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </article>
 
   <!-- ********** Projects ********** -->
   <article class="mt-5 projects" id="projects">
+    <h2 class="visually-hidden">Projects</h2>
     <section class="container part1">
+      <h2 class="visually-hidden">Projects</h2>
       <div class="row align-items-center justify-content-evenly">
         <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
-          <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">iTQAN</h4>
-            <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
-              <img src="images/itqan.png" alt="iTQAN" title="iTQAN" class="rounded-circle w-100 img-fluid">
-            </div>
+          <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">
+            Projects
+          </h3>
+          <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
+            <img src="images/projects.jpg" alt="Projects" title="Projects" class="rounded-circle w-100 img-fluid">
+          </div>
         </div>
         <div class="col-11 col-lg-7 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
           <h4>
-            <i class="fa-duotone fa-solid fa-trophy-star me-2"
+            <i class="fa-duotone fa-solid fa-layer-group me-2"
               style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-            Success Starts with the Right Tools!
+            Explore Creativity and Professionalism in My Diverse Projects!
           </h4>
           <hr class="my-2">
           <p class="text-justify">
-            I founded <strong class="color1">iTQAN</strong> with the belief that digital success doesn’t happen by
-            chance it
-            requires knowledge, expertise, and the
-            right tools! That’s why I built a comprehensive suite of professional digital services and specialized
-            training through
-            <strong class="color1">iTQAN Academy</strong>, empowering you to achieve your goals with confidence and
-            efficiency.
+            This section showcases a collection of projects that reflect my expertise in design, data analysis, and
+            various business
+            tools. From web development to professional document preparation, from network planning to analytical
+            modeling, each
+            project here is a blend of precision and innovation. Enjoy browsing my work, where technology meets
+            creativity to
+            deliver outstanding results!
           </p>
         </div>
       </div>
     </section>
     <section class="container part2">
+      <h2 class="visually-hidden">Projects</h2>
       <div class="row align-items-center justify-content-evenly mt-4">
-        <div class="col-11 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
-          <h4>
-            <img src="images/itqan-ds.png" alt="iTQAN" title="iTQAN" class="shadow rounded-circle me-3"
-              style="width: 10%;">
-            Smart Digital Solutions for Your Business!
-          </h4>
-          <hr class="my-2">
-          <p class="mb-3 text-justify">
-            At <strong class="color1">iTQAN</strong>, we know that smart and professional solutions are the key to
-            success
-            in the digital world! We provide
-            integrated services, including website design, digital marketing, data analysis, and business solutions
-            using office
-            software. Whether you're launching a new project or enhancing your brand, we are here to help you achieve
-            your goals
-            efficiently and effortlessly.
-          </p>
-          <a target="_blank" rel="noopener noreferrer" href="#" class="py-2 px-3 fw-bold rounded-3 shadow color2">Visit
-            Us</a>
+        <div class="col-11 shadow rounded-3 mb-5 px-2 py-3 custome-border">
+          <div class="row align-items-center justify-content-evenly py-3">
+            <div class="col-11 col-lg-3 mb-5 mb-lg-0">
+              <img src="images/itqan-ds.png" alt="iTQAN DS" title="iTQAN-ds" class="img-fluid w-100 rounded-3 shadow">
+            </div>
+            <div class="col-11 col-lg-8">
+              <h3>Smart Digital Solutions for Your Business!</h3>
+              <hr class="my-4">
+              <p class="fw-bold text-justify">
+                At <strong class="color1">iTQAN</strong>, we know that smart and professional solutions are the key to
+                success in the digital world! We
+                provide
+                integrated services, including website design, digital marketing, data analysis, and business solutions
+                using office
+                software. Whether you're launching a new project or enhancing your brand, we are here to help you
+                achieve your goals
+                efficiently and effortlessly.
+              </p>
+              <hr class="my-4">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2">Explore</a>
+            </div>
+          </div>
         </div>
-        <div class="col-11 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
-          <h4>
-            <img src="images/itqan-academy.png" alt="iTQAN Academy" title="iTQAN Academy"
-              class="shadow rounded-circle me-3" style="width: 10%;">
-            Master New Skills with iTQAN Academy!
-          </h4>
-          <hr class="my-2">
-          <p class="mb-3 text-justify">
-            Continuous learning is the key to growth! At <strong class="color1">iTQAN Academy</strong>, we offer
-            specialized
-            training courses in website
-            design,
-            digital marketing, data analysis, and office software, equipping you with the skills needed to excel in
-            your
-            field.
-          </p>
-          <a target="_blank" rel="noopener noreferrer" href="#" class="py-2 px-3 fw-bold rounded-3 shadow color2">Visit
-            Us</a>
+        <div class="col-11 shadow rounded-3 mb-5 px-2 py-3 custome-border">
+          <div class="row align-items-center justify-content-evenly py-3">
+            <div class="col-11 col-lg-3 mb-5 mb-lg-0">
+              <img src="images/itqan_academy.png" alt="iTQAN Academy" title="iTQAN Academy"
+                class="img-fluid w-100 rounded-3 shadow">
+            </div>
+            <div class="col-11 col-lg-8">
+              <h3>Master New Skills with iTQAN Academy!</h3>
+              <hr class="my-4">
+              <p class="fw-bold text-justify">
+                Continuous learning is the key to growth! At <strong class="color1">iTQAN Academy</strong>, we offer
+                specialized training courses in
+                website design,
+                digital marketing, data analysis, and office software, equipping you with the skills needed to excel in
+                your field.
+              </p>
+              <hr class="my-4">
+              <a target="_blank" rel="noopener noreferrer" href="#" class="px-3 py-2">Explore</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1065,13 +1128,17 @@
 
   <!-- ********** Hobbies ********** -->
   <article class="mt-5 hobbies" id="hobbies">
+    <h2 class="visually-hidden">Hobbies</h2>
     <section class="container part1">
+      <h2 class="visually-hidden">Hobbies</h2>
       <div class="row align-items-center justify-content-evenly">
         <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
-          <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">Hobbies</h4>
-            <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
-              <img src="images/hobbies.jpg" alt="Hobbies" title="Hobbies" class="rounded-circle w-100 img-fluid">
-            </div>
+          <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">
+            Hobbies
+          </h3>
+          <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
+            <img src="images/hobbies.jpg" alt="Hobbies" title="Hobbies" class="rounded-circle w-100 img-fluid">
+          </div>
         </div>
         <div class="col-11 col-lg-7 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
           <h4>
@@ -1093,6 +1160,7 @@
       </div>
     </section>
     <section class="container part2">
+      <h2 class="visually-hidden">Hobbies</h2>
       <div class="row align-items-center justify-content-evenly mt-4">
         <div class="col-11 col-lg-5 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
           <h4>
@@ -1127,9 +1195,9 @@
           </h4>
           <hr class="my-2">
           <p class="text-justify">
-            I have practiced basketball, swimming, and badminton, and I particularly enjoy running, as it gives me
-            energy and
-            balance.
+            I have practiced basketball, swimming, football, and badminton, and I particularly enjoy running, as it
+            gives me energy
+            and balance.
           </p>
         </div>
         <div class="col-11 col-lg-5 my-4 px-3 py-4 rounded-4 shadow text-start custome-border">
@@ -1151,13 +1219,17 @@
 
   <!-- ********** Contact ********** -->
   <article class="mt-5 contact" id="contact">
+    <h2 class="visually-hidden">Contact</h2>
     <section class="container part1">
+      <h2 class="visually-hidden">Contact</h2>
       <div class="row align-items-center justify-content-evenly">
         <div class="col-8 col-md-6 col-lg-3 mb-3 mb-lg-0">
-          <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">Contact Us</h4>
-            <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
-              <img src="images/contact.jpg" alt="Contact" title="Contact" class="rounded-circle w-100 img-fluid">
-            </div>
+          <h3 class="rounded-4 shadow mb-4 px-3 py-2 text-center main-heading">
+            Contact Us
+          </h3>
+          <div class="rounded-circle shadow mb-4 mb-md-0 img-box">
+            <img src="images/contact.jpg" alt="Contact" title="Contact" class="rounded-circle w-100 img-fluid">
+          </div>
         </div>
         <div class="col-11 col-lg-7 my-4 px-3 py-4 rounded-4 shadow text-start custome-border desc">
           <h4>
@@ -1177,6 +1249,7 @@
       </div>
     </section>
     <section class="container part2">
+      <h2 class="visually-hidden">Contact</h2>
       <div class="row align-items-center justify-content-evenly mt-4">
         <div class="col-11 col-md-7 col-lg-3 my-4 px-3 py-4 rounded-4 shadow text-center custome-border">
           <h4>
@@ -1201,8 +1274,8 @@
           <hr class="my-3">
           <p class="text-justify">
             <a target="_blank" rel="noopener noreferrer"
-              href="mailto:ibrahimelfiky93@gmail.com?subject=Inquiry&body=Hello, I would like to ask about..."
-              title="E-Mail" class="text-center d-block color3">
+              href="mailto:ibrahimelfiky93@gmail.com?subject=Inquiry&body=Hello" title="E-Mail"
+              class="text-center d-block color3">
               ibrahimelfiky93@gmail.com
             </a>
           </p>
@@ -1228,6 +1301,7 @@
   <!-- ********** Footer ********** -->
   <footer>
     <section class="container links">
+      <h2 class="visually-hidden">Links</h2>
       <div class="row align-items-center justify-content-evenly">
         <div class="col-11 col-md-5 col-lg-3 custome-border shadow rounded-4 my-4 px-3 py-4">
           <h4>
@@ -1239,61 +1313,66 @@
             <li class="mt-2 ms-2">
               <i class="fa-duotone fa-solid fa-display-code fa-lg me-2"
                 style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-              <a href="#">Web Design</a>
+              <a target="_blank" rel="noopener noreferrer" href="#">Web Design</a>
             </li>
             <li class="mt-2 ms-2">
               <i class="fa-duotone fa-solid fa-chart-mixed-up-circle-dollar fa-lg me-2"
                 style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-              <a href="#">Data Analysis</a>
+              <a target="_blank" rel="noopener noreferrer" href="#">Data Analysis</a>
             </li>
             <li class="mt-2 ms-2">
               <i class="fa-duotone fa-solid fa-bullhorn fa-lg me-2"
                 style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-              <a href="#">Digital Marketing</a>
+              <a target="_blank" rel="noopener noreferrer" href="#">Digital Marketing</a>
             </li>
             <li class="mt-2 ms-2">
               <i class="fa-duotone fa-solid fa-files fa-lg me-2"
                 style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-              <a href="#">MS Office Service</a>
+              <a target="_blank" rel="noopener noreferrer" href="#">MS Office Service</a>
             </li>
             <li class="mt-2 ms-2">
               <i class="fa-duotone fa-solid fa-graduation-cap fa-lg me-2"
                 style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-              <a href="#">iTQAN Academy</a>
+              <a target="_blank" rel="noopener noreferrer" href="#">iTQAN Academy</a>
             </li>
           </ul>
         </div>
-        <div class="col-11 col-md-5 col-lg-3 custome-border shadow rounded-4 my-4 px-3 py-4">
+        <div class="col-11 col-md-5 col-lg-4 custome-border shadow rounded-4 my-4 px-3 py-4">
           <h4>
             <i class="fa-duotone fa-solid fa-grid-2 me-2"
               style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-            Site Sections
+            Let's Chat!
           </h4>
           <ul class="list-unstyled mt-3">
             <li class="mt-2 ms-2">
-              <i class="fa-duotone fa-solid fa-address-card fa-lg me-2"
-                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-              <a href="#about">About Me</a>
+              <i class="fa-brands fa-facebook-messenger fa-lg me-2" style="color: #0084FF;"></i>
+              <a target="_blank" rel="noopener noreferrer" href="https://m.me/ibrahimelfiky93">
+                Messenger <span style="opacity: 0.6;">(@ibrahimelfiky93)</span>
+              </a>
             </li>
             <li class="mt-2 ms-2">
-              <i class="fa-duotone fa-solid fa-graduation-cap fa-lg me-2"
-                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-              <a href="#education">Education</a>
+              <i class="fa-brands fa-whatsapp fa-lg me-2" style="color: #25D366;"></i>
+              <a target="_blank" rel="noopener noreferrer" href="https://wa.me/201145773053">
+                WhatsApp <span style="opacity: 0.6;">(+20 114 577 3053)</span>
+              </a>
             </li>
             <li class="mt-2 ms-2">
-              <i class="fa-duotone fa-solid fa-briefcase fa-lg me-2"
-                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-              <a href="#workExp">Experience</a>
+              <i class="fa-brands fa-telegram fa-lg me-2" style="color: #0088CC;"></i>
+              <a target="_blank" rel="noopener noreferrer" href="https://t.me/ibrahimelfiky93">
+                Telegram <span style="opacity: 0.6;">(@ibrahimelfiky93)</span>
+              </a>
             </li>
             <li class="mt-2 ms-2">
-              <i class="fa-duotone fa-solid fa-file-certificate fa-lg me-2"
-                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-              <a href="#certificate">Certificate</a>
+              <i class="fa-brands fa-line fa-lg me-2" style="color: #00C300;"></i>
+              <a target="_blank" rel="noopener noreferrer" href="https://line.me/ti/p/TQbZ6jg8AU">
+                Line Chat <span style="opacity: 0.6;">(@ibrahimelfiky93)</span>
+              </a>
             </li>
             <li class="mt-2 ms-2">
-              <i class="fa-duotone fa-solid fa-screwdriver-wrench fa-lg me-2"
-                style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-              <a href="#skills">Skills</a>
+              <i class="fa-brands fa-weixin fa-lg me-2" style="color: #1AAD19;"></i>
+              <a target="_blank" rel="noopener noreferrer" href="https://u.wechat.com/kHqEgfWuzYCdqIKcj8fvg6E?s=4">
+                We Chat <span style="opacity: 0.6;">(@ibrahimelfiky93)</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -1301,7 +1380,7 @@
           <h4>
             <i class="fa-duotone fa-solid fa-globe me-2"
               style="--fa-primary-color: #ffd700; --fa-secondary-color: #2A5ADA; --fa-secondary-opacity: 0.7;"></i>
-            Get Me On!
+            Follow Me On!
           </h4>
           <ul class="list-unstyled mt-3">
             <li class="mt-2 ms-2">
@@ -1340,8 +1419,10 @@
       </div>
     </section>
     <section class="copyright px-3 py-3 text-center">
+      <h2 class="visually-hidden">copyright</h2>
       <p class="fw-bold">
-        &copy; <span id="year"></span> <a href="#header">Ibrahim El-Fiky</a> All Rights Reserved.
+        &copy; <span id="year"></span> <a target="_blank" rel="noopener noreferrer" href="#header">Ibrahim El-Fiky</a>
+        All Rights Reserved.
       </p>
     </section>
   </footer>

@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Navbar Collapse
 document.addEventListener("DOMContentLoaded", function () {
   const navbarToggler = document.querySelector(".navbar-toggler");
-  const navLinks = document.querySelectorAll(".nav-link");
+  const navLinks = document.querySelectorAll(".nav-coll");
   const navbarCollapse = document.querySelector("#navbarSupportedContent");
 
   navLinks.forEach((link) => {
@@ -149,6 +149,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "--gradient",
         "linear-gradient(0deg, rgba(198, 198, 198, 0.7), rgba(255, 255, 255, 0.3), rgba(198, 198, 198, 0.7))"
       );
+
+      lightBtn.classList.add("theme-active");
+      lightBtn.classList.remove("theme-disable");
+      darkBtn.classList.add("theme-disable");
+      darkBtn.classList.remove("theme-active");
     } else {
       root.style.setProperty("--text-color", "#ccc");
       root.style.setProperty("--bgColor", "#000");
@@ -157,15 +162,30 @@ document.addEventListener("DOMContentLoaded", function () {
         "--gradient",
         "linear-gradient(0deg, rgba(20, 20, 20, 0.7), rgba(50, 50, 50, 0.3), rgba(20, 20, 20, 0.7))"
       );
+
+      darkBtn.classList.add("theme-active");
+      darkBtn.classList.remove("theme-disable");
+      lightBtn.classList.add("theme-disable");
+      lightBtn.classList.remove("theme-active");
     }
+
     localStorage.setItem("theme", theme);
   }
 
   const savedTheme = localStorage.getItem("theme") || "light";
   setTheme(savedTheme);
 
-  lightBtn.addEventListener("click", () => setTheme("light"));
-  darkBtn.addEventListener("click", () => setTheme("dark"));
+  lightBtn.addEventListener("click", () => {
+    if (!lightBtn.classList.contains("theme-active")) {
+      setTheme("light");
+    }
+  });
+
+  darkBtn.addEventListener("click", () => {
+    if (!darkBtn.classList.contains("theme-active")) {
+      setTheme("dark");
+    }
+  });
 });
 
 // Update Of The Year On Footer
