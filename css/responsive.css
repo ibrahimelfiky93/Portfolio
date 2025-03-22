@@ -34,7 +34,6 @@
 /* Medium devices (desktops, 768px and up) */
 @media (max-width: 991.98px) {
   header nav ul.navbar-nav {
-    padding: 10px 0 !important;
     background: rgb(42 90 218 / 95%);
   }
 

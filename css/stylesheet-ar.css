@@ -12,10 +12,6 @@ ol {
 }
 
 /* ********** Header ********** */
-header nav a.navbar-brand {
-  font-family: 'Lemonada', sans-serif;
-}
-
 header nav li.nav-item:not(:last-child)::after {
   top: 0;
   left: 0;
